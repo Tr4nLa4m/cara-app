@@ -1,0 +1,12 @@
+.pagination a{
+    background-color: #088178;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0.125rem
+}
+
+#pagination a svg {
+    font-size: 1rem;
+}

@@ -1,0 +1,50 @@
+
+/* Hero section */
+#hero {
+    background-image: url("../../../public/images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero h4 {
+    padding-bottom: 20px;
+}
+
+#hero h1 {
+    color: var(--nav-color-hover);
+}
+
+#hero button {
+    background-image: url("../../../public/images/button.png");
+    background-color: transparent;
+    color: var(--nav-color-hover);
+    font-size: 20px;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.m-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+
+

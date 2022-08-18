@@ -1,40 +1,43 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 import { faBagShopping , faXmark, faOutdent} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 
 export default function Header() {
+
+  const [activeHover, setActiveHover] = useState("active");
   return (
     // Header Start
     <section id="header">
-      <Link to="/" >
-        <img src={require('../../images/logo.png')} className="logo" alt="logo" />
-      </Link>
+      <NavLink to="/" >
+        <img src='/images/logo.png' className="logo" alt="logo" />
+      </NavLink>
 
       <div>
         <ul id="navbar">
           <li>
-            <Link to="/" className="active">
+            <NavLink to="/" className={(navData) => (navData.isActive ? "active" : 'none')}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/products">Shop</Link>
+            <NavLink to="/products" className={(navData) => (navData.isActive ? "active" : 'none')}>Shop</NavLink>
           </li>
           <li>
-            <Link to="/blogs" >Blog</Link>
+            <NavLink to="/blogs" className={(navData) => (navData.isActive ? "active" : 'none')}>Blog</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about" className={(navData) => (navData.isActive ? "active" : 'none')}>About</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" className={(navData) => (navData.isActive ? "active" : 'none')}>Contact</NavLink>
           </li>
           <li id="lg_bag">
-            <Link to="/cart">
+            <NavLink to="/cart" className={(navData) => (navData.isActive ? "active" : 'none')}>
               <FontAwesomeIcon icon={faBagShopping} />
-            </Link>
+            </NavLink>
           </li>
           <a href="#" id="close">
             <FontAwesomeIcon icon={faXmark} />

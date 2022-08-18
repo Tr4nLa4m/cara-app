@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('style/base.css');
 :root {
   --h-word-color: #222;
   --p--color: #465b52;
@@ -13,6 +14,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'League Spartan', sans-serif;
+  
+}
+
+body{
+  line-height: unset;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  font-weight: bold;
+  margin: 0;
+  line-height: unset;
+}
+
+p {
+  font-weight: normal;
+
+}
+
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 button.normal {
@@ -68,14 +91,14 @@ p {
   margin: 15px 0 20px 0;
 }
 
-.section-p1 {
-  padding: 40px 80px;
-}
-
-.section-m1 {
-  margin: 40px 0;
+a{
+  text-decoration: none;
 }
 
 body {
+  width: 100%;
+}
+
+img{
   width: 100%;
 }
